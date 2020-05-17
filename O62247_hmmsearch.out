@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3 (Nov 2019); http://hmmer.org/
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  bpti_kunitz.hmm
+# target sequence database:        O62247.fasta
+# Max sensitivity mode:            on [all heuristic filters off]
+# sequence search space set to:    1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clean_kunitz_aln  [M=58]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------             -----------
+    4.9e-07   16.2   0.4    1.6e-06   14.6   0.4    2.0  1  sp|O62247|BLI5_CAEEL  Kunitz-type protein bli-5 OS=Caenorhabd
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|O62247|BLI5_CAEEL  Kunitz-type protein bli-5 OS=Caenorhabditis elegans OX=6239 GN=bli-5 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.4   1.6e-06   1.6e-06      18      57 ..     148     186 ..     131     187 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.6e-06
+      clean_kunitz_aln  18 ikrfYynskakkClrFvygGcg.gneNnFktieeCrrtClg 57 
+                           ++r+ ++    +C  F +   +   +NnFkt   C+  C+g
+  sp|O62247|BLI5_CAEEL 148 LSRWGFDG--EQCIEFKWNPERpSSANNFKTRAHCEDYCIG 186
+                           55666654..58******99884578*************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (58 nodes)
+Target sequences:                          1  (202 residues searched)
+Passed MSV filter:                         1  (1); expected 1.0 (1)
+Passed bias filter:                        1  (1); expected 1.0 (1)
+Passed Vit filter:                         1  (1); expected 1.0 (1)
+Passed Fwd filter:                         1  (1); expected 1.0 (1)
+Initial search space (Z):                  1  [as set by --Z on cmdline]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13.73
+//
+[ok]
